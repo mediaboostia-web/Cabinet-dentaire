@@ -1,15 +1,15 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Phone, MapPin, Mail, MessageCircle, Clock, Navigation } from 'lucide-react';
-import videoBackground from '../../asset/video/Video-background.mp4';
-import ctaImage from '../../asset/Images/Image-travail-cabinet-guedet-gabon.jpg';
+const videoBackground = '/asset/video/Video-background.mp4';
+const ctaImage = '/asset/Images/Image-travail-cabinet-guedet-gabon.jpg';
 
 const ContactPage = () => {
   return (
     <div className="bg-medical-ivory min-h-screen">
       
       {/* SECTION 1 — HERO VIDEO */}
-      <section className="relative h-[60vh] min-h-[500px] flex items-center justify-center overflow-hidden">
+      <section className="relative h-[50vh] md:h-[60vh] min-h-[400px] flex items-center justify-center overflow-hidden">
         <video 
           autoPlay 
           loop 
@@ -28,7 +28,7 @@ const ContactPage = () => {
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="text-medical-gold font-semibold tracking-widest uppercase text-sm mb-4 block"
+            className="text-medical-gold font-semibold tracking-widest uppercase text-xs md:text-sm mb-4 block"
           >
             Gardons le contact
           </motion.span>
@@ -36,7 +36,7 @@ const ContactPage = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="font-cinzel text-5xl md:text-7xl font-bold text-white mb-6"
+            className="font-cinzel text-3xl md:text-5xl lg:text-7xl font-bold text-white mb-6 leading-tight"
           >
             Nous Sommes Là Pour <span className="text-medical-gold">Vous</span>
           </motion.h1>
@@ -44,7 +44,7 @@ const ContactPage = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="text-lg md:text-xl text-white/80 max-w-2xl mx-auto"
+            className="text-base md:text-xl text-white/80 max-w-2xl mx-auto font-light"
           >
             Une urgence, une question ou simplement envie de prendre rendez-vous ? 
             N'hésitez pas à nous contacter par le moyen qui vous convient le mieux.

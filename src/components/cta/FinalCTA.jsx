@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Calendar, PhoneCall, ArrowRight } from 'lucide-react';
-import bgImage from '../../../asset/Images/Equipement-dentiste-cabinet-guedet.jpg';
+const bgImage = '/asset/Images/Equipement-dentiste-cabinet-guedet.jpg';
 
 export default function FinalCTA() {
   return (
@@ -49,7 +49,7 @@ export default function FinalCTA() {
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
             {/* Primary CTA */}
-            <a href="#contact" className="group relative flex items-center justify-center gap-3 bg-medical-gold text-medical-dark px-10 py-5 rounded-full font-bold text-lg w-full sm:w-auto overflow-hidden transition-all hover:scale-105 shadow-[0_0_40px_rgba(212,175,55,0.3)]">
+            <a href="#/contact" className="group relative flex items-center justify-center gap-3 bg-medical-gold text-medical-dark px-10 py-5 rounded-full font-bold text-lg w-full sm:w-auto overflow-hidden transition-all hover:scale-105 shadow-[0_0_40px_rgba(212,175,55,0.3)]">
               <Calendar size={24} className="group-hover:-translate-y-1 group-hover:scale-110 transition-transform" />
               <span>Réserver ma consultation</span>
               <div className="absolute inset-0 rounded-full ring-2 ring-medical-gold/60 animate-pulse-slow" />

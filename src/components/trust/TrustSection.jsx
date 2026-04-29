@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { ShieldCheck, Stethoscope, Microscope } from 'lucide-react';
-import trustImage from '../../../asset/Images/Dentiste du gabon cabinet guedet.jpg';
+const trustImage = '/asset/Images/Dentiste du gabon cabinet guedet.jpg';
 
 const pillars = [
   {
@@ -99,7 +99,7 @@ export default function TrustSection() {
               transition={{ delay: 0.8, duration: 0.6 }}
               className="mt-12"
             >
-              <a href="#contact" className="inline-block bg-medical-gold text-medical-dark px-8 py-4 rounded-full font-bold text-lg hover:scale-105 transition-transform shadow-[0_0_20px_rgba(212,175,55,0.2)] hover:shadow-[0_0_30px_rgba(212,175,55,0.4)]">
+              <a href="#/contact" className="inline-block bg-medical-gold text-medical-dark px-8 py-4 rounded-full font-bold text-lg hover:scale-105 transition-transform shadow-[0_0_20px_rgba(212,175,55,0.2)] hover:shadow-[0_0_30px_rgba(212,175,55,0.4)]">
                 Prendre rendez-vous
               </a>
             </motion.div>

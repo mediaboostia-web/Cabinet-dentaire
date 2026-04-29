@@ -2,11 +2,11 @@ import React, { useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { ShieldCheck, HeartPulse, Sparkles, PlusSquare, ArrowRight, CheckCircle2, Phone, Calendar, Clock, Star, Users, Activity, Search, Shield, Zap, Heart } from 'lucide-react';
 import { servicesData } from '../data/servicesData';
-import imgEsthetique from '../../asset/Images/Cabinet dentaire libreville.jpg';
-import imgConfiance from '../../asset/Images/Dentiste du gabon cabinet guedet.jpg';
-import imgUrgence from '../../asset/Images/Images patient-cabinet-guedet-libreville.jpg';
-import imgPrevn from '../../asset/Images/Image-cabinet-dentaire.jpg';
-import imgRemp from '../../asset/Images/Image-travail-cabinet-guedet-gabon.jpg';
+const imgEsthetique = '/asset/Images/Cabinet dentaire libreville.jpg';
+const imgConfiance = '/asset/Images/Dentiste du gabon cabinet guedet.jpg';
+const imgUrgence = '/asset/Images/Images patient-cabinet-guedet-libreville.jpg';
+const imgPrevn = '/asset/Images/Image-cabinet-dentaire.jpg';
+const imgRemp = '/asset/Images/Image-travail-cabinet-guedet-gabon.jpg';
 
 const getIllustrationForService = (slug) => {
   const map = {
@@ -501,7 +501,7 @@ const ServicesIndex = () => {
             <a href="https://wa.me/24162526272" target="_blank" rel="noopener noreferrer" className="btn-primary w-full sm:w-auto px-8 py-4 bg-[#25D366] text-white font-bold rounded-full hover:bg-[#128C7E] hover:scale-105 transition-all flex items-center justify-center gap-3 text-lg shadow-lg shadow-[#25D366]/30">
               <Phone className="w-6 h-6" /> Discuter sur WhatsApp
             </a>
-            <a href="#contact" className="w-full sm:w-auto px-8 py-4 bg-white text-medical-dark font-bold rounded-full hover:bg-medical-ivory hover:scale-105 transition-all flex items-center justify-center gap-3 text-lg shadow-xl">
+            <a href="#/contact" className="w-full sm:w-auto px-8 py-4 bg-white text-medical-dark font-bold rounded-full hover:bg-medical-ivory hover:scale-105 transition-all flex items-center justify-center gap-3 text-lg shadow-xl">
               <Calendar className="w-6 h-6" /> Réserver en ligne
             </a>
           </motion.div>

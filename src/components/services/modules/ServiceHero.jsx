@@ -49,7 +49,7 @@ export default function ServiceHero({ data }) {
           </p>
 
           <div className="flex flex-col sm:flex-row items-start sm:items-center gap-6">
-            <a href="#contact" className="group relative flex items-center justify-center gap-2 bg-medical-gold text-medical-dark px-8 py-4 rounded-full font-bold text-lg overflow-hidden transition-all hover:scale-105 shadow-[0_0_20px_rgba(212,175,55,0.3)] w-full sm:w-auto">
+            <a href="#/contact" className="group relative flex items-center justify-center gap-2 bg-medical-gold text-medical-dark px-8 py-4 rounded-full font-bold text-lg overflow-hidden transition-all hover:scale-105 shadow-[0_0_20px_rgba(212,175,55,0.3)] w-full sm:w-auto">
               <Calendar size={20} className="group-hover:-translate-y-1 group-hover:scale-110 transition-transform" />
               <span>Prendre RDV</span>
               <div className="absolute inset-0 rounded-full ring-1 ring-medical-gold/50 animate-pulse-slow" />

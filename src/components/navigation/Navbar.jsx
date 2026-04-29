@@ -95,7 +95,7 @@ function Navbar() {
             transition={{ delay: 0.5 }}
             className="hidden lg:block"
           >
-            <a href="#contact" className="group relative flex items-center justify-center gap-2 bg-medical-gold text-medical-dark px-6 py-3 rounded-full font-bold text-sm overflow-hidden transition-all hover:scale-105 shadow-[0_0_20px_rgba(212,175,55,0.2)]">
+            <a href="#/contact" className="group relative flex items-center justify-center gap-2 bg-medical-gold text-medical-dark px-6 py-3 rounded-full font-bold text-sm overflow-hidden transition-all hover:scale-105 shadow-[0_0_20px_rgba(212,175,55,0.2)]">
               <Calendar size={18} className="group-hover:-translate-y-1 group-hover:scale-110 transition-transform" />
               <span>Prise de RDV</span>
               <div className="absolute inset-0 rounded-full ring-1 ring-medical-gold/60 animate-pulse-slow" />
@@ -122,7 +122,7 @@ function Navbar() {
             >
               <ul className="flex flex-col p-6 gap-6">
 
-                {navLinks.filter(l => l.name !== 'Accueil').map((link) => (
+                {navLinks.map((link) => (
                   <li key={link.name}>
                     <a 
                       href={link.href} 
@@ -135,7 +135,7 @@ function Navbar() {
                 ))}
                 <li className="pt-4 border-t border-white/10">
                   <a 
-                    href="#contact" 
+                    href="#/contact" 
                     onClick={() => setMobileMenu(false)}
                     className="flex items-center justify-center gap-2 bg-medical-gold text-medical-dark px-6 py-4 rounded-full font-bold text-lg w-full"
                   >

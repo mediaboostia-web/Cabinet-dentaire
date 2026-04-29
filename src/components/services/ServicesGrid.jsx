@@ -201,7 +201,7 @@ export default function ServicesGrid() {
                     <a href={`#/services/${activeService.slug}`} className="inline-flex items-center gap-2 bg-medical-dark text-white px-6 py-3 rounded-full font-bold uppercase tracking-wider text-sm hover:bg-medical-gold transition-colors">
                       En savoir plus <Scaling size={16} className="rotate-45" />
                     </a>
-                    <a href="#contact" className="inline-flex items-center gap-2 border-b-2 border-medical-gold pb-1 text-medical-dark font-bold uppercase tracking-wider text-sm hover:text-medical-gold transition-colors">
+                    <a href="#/contact" className="inline-flex items-center gap-2 border-b-2 border-medical-gold pb-1 text-medical-dark font-bold uppercase tracking-wider text-sm hover:text-medical-gold transition-colors">
                       Prendre rendez-vous <Scaling size={16} className="rotate-45" />
                     </a>
                   </div>

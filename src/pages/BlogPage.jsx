@@ -1,15 +1,15 @@
 import React, { useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Calendar, Clock, ChevronRight, PlayCircle, Globe, Award, Sparkles, Phone, ArrowRight, BookOpen, Heart } from 'lucide-react';
-import videoPresentation from '../../asset/video/Video-presentation.mp4';
-import imgBlog1 from '../../asset/Images/blog joyeux noel.jpg';
-import imgBlog2 from '../../asset/Images/Images patient-cabinet-guedet-libreville.jpg';
-import imgBlog3 from '../../asset/Images/Cabinet dentaire libreville.jpg';
-import imgHeroFallback from '../../asset/Images/Image-cabinet-dentaire.jpg';
-import imgEventBg from '../../asset/Images/Equipement-dentiste-cabinet-guedet.jpg';
-import imgEvent from '../../asset/Images/Dentiste du gabon cabinet guedet.jpg';
-import imgWorld from '../../asset/Images/Image-travail-cabinet-guedet-gabon.jpg';
-import imgCTABg from "../../asset/Images/Service d'operation dentaire au gabon.jpg";
+const videoPresentation = '/asset/video/Video-presentation.mp4';
+const imgBlog1 = '/asset/Images/blog joyeux noel.jpg';
+const imgBlog2 = '/asset/Images/Images patient-cabinet-guedet-libreville.jpg';
+const imgBlog3 = '/asset/Images/Cabinet dentaire libreville.jpg';
+const imgHeroFallback = '/asset/Images/Image-cabinet-dentaire.jpg';
+const imgEventBg = '/asset/Images/Equipement-dentiste-cabinet-guedet.jpg';
+const imgEvent = '/asset/Images/Dentiste du gabon cabinet guedet.jpg';
+const imgWorld = '/asset/Images/Image-travail-cabinet-guedet-gabon.jpg';
+const imgCTABg = "/asset/Images/Service d'operation dentaire au gabon.jpg";
 
 export default function BlogPage() {
   useEffect(() => {
@@ -307,7 +307,7 @@ export default function BlogPage() {
                 </p>
 
                 <div className="flex flex-col sm:flex-row gap-6">
-                  <a href="#contact" className="group relative px-8 py-5 bg-white text-medical-dark font-bold rounded-full overflow-hidden shadow-xl text-center">
+                  <a href="#/contact" className="group relative px-8 py-5 bg-white text-medical-dark font-bold rounded-full overflow-hidden shadow-xl text-center">
                     <div className="absolute inset-0 bg-medical-ivory transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></div>
                     <span className="relative flex items-center justify-center gap-2 text-lg">
                       Prendre un rendez-vous <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />

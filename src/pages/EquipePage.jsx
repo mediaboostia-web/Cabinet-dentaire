@@ -3,12 +3,12 @@ import { motion } from 'framer-motion';
 import { Award, ShieldCheck, Heart, Users, Star, ArrowRight, Quote, CheckCircle, Activity, Target, Zap } from 'lucide-react';
 
 // Import Assets locaux
-import heroVideo from '../../asset/video/Video-background.mp4';
-import drGuedetImg from '../../asset/Images/Dentiste du gabon cabinet guedet.jpg';
-import equipementImg from '../../asset/Images/Equipement-dentiste-cabinet-guedet.jpg';
-import patientImg from '../../asset/Images/Images patient-cabinet-guedet-libreville.jpg';
-import travailImg from '../../asset/Images/Image-travail-cabinet-guedet-gabon.jpg';
-import operationImg from "../../asset/Images/Service d'operation dentaire au gabon.jpg";
+const heroVideo = '/asset/video/Video-background.mp4';
+const drGuedetImg = '/asset/Images/Dentiste du gabon cabinet guedet.jpg';
+const equipementImg = '/asset/Images/Equipement-dentiste-cabinet-guedet.jpg';
+const patientImg = '/asset/Images/Images patient-cabinet-guedet-libreville.jpg';
+const travailImg = '/asset/Images/Image-travail-cabinet-guedet-gabon.jpg';
+const operationImg = "/asset/Images/Service d'operation dentaire au gabon.jpg";
 
 export default function EquipePage() {
   useEffect(() => {

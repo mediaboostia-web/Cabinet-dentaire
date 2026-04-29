@@ -2,9 +2,9 @@ import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { PhoneCall, Calendar } from 'lucide-react';
 
-import img1 from '../../../asset/Images/Cabinet dentaire libreville.jpg';
-import img2 from '../../../asset/Images/Image-travail-cabinet-guedet-gabon.jpg';
-import img3 from '../../../asset/Images/Service d\'operation dentaire au gabon.jpg';
+const img1 = '/asset/Images/Cabinet dentaire libreville.jpg';
+const img2 = '/asset/Images/Image-travail-cabinet-guedet-gabon.jpg';
+const img3 = "/asset/Images/Service d'operation dentaire au gabon.jpg";
 
 const bgImages = [img1, img2, img3];
 
@@ -85,7 +85,7 @@ export default function HeroSection() {
             variants={itemVariants}
             className="flex flex-col sm:flex-row items-center gap-6"
           >
-            <a href="#contact" className="group relative flex items-center gap-3 bg-medical-gold text-medical-dark px-8 py-4 rounded-full font-bold text-lg overflow-hidden transition-all hover:scale-105">
+            <a href="#/contact" className="group relative flex items-center gap-3 bg-medical-gold text-medical-dark px-8 py-4 rounded-full font-bold text-lg overflow-hidden transition-all hover:scale-105">
               <Calendar size={20} className="group-hover:rotate-12 transition-transform" />
               <span>Consultation</span>
               <div className="absolute inset-0 rounded-full ring-1 ring-medical-gold/50 animate-pulse-slow"></div>

@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import img1 from '../../../asset/Images/Images patient-cabinet-guedet-libreville.jpg';
-import img2 from '../../../asset/Images/Image-cabinet-dentaire.jpg';
+const img1 = '/asset/Images/Images patient-cabinet-guedet-libreville.jpg';
+const img2 = '/asset/Images/Image-cabinet-dentaire.jpg';
 
 const steps = [
   {
